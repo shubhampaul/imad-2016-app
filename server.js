@@ -7,11 +7,12 @@ var bodyParser = require('body-parser');
 var session = require('express-session');
 
 var config = {
-    user: 'coco98',
-    database: 'coco98',
-    host: 'db.imad.hasura-app.io',
+    user: 'uzlpjcqx_db_user_0',
+    database: 'uzlpjcqx_db_0',
+    host: 'localhost',
     port: '5432',
-    password: process.env.DB_PASSWORD
+    password: 'Mf.uvto#+?oU'
+    //password: process.env.DB_PASSWORD
 };
 
 var app = express();
@@ -30,7 +31,7 @@ function createTemplate (data) {
     
     var htmlTemplate = `
     <html>
-      <head>
+      <head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
           <title>
               ${title}
           </title>
@@ -232,7 +233,8 @@ app.get('/ui/:fileName', function (req, res) {
 });
 
 
-var port = 8080; // Use 8080 for local development because you might already have apache running on 80
-app.listen(8080, function () {
+var port = process.env.PORT || 8080; // Use 8080 for local development because you might already have apache running on 80 , process.env.PORT lets the port be set by Heroku
+app.listen(port, function () {
   console.log(`IMAD course app listening on port ${port}!`);
 });
+
