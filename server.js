@@ -7,8 +7,8 @@ var bodyParser = require('body-parser');
 var session = require('express-session');
 
 var config = {
-    user: 'wgfcdoefmbhrar',
-    database: 'd5dfen0mclg90s',
+    user: 'rmkzgjxpdojfak',
+    database: 'd3okn20upmn6fe',
     host: 'ec2-54-163-240-7.compute-1.amazonaws.com',
     port: '5432',
     //password: 'Mf.uvto#+?oU'
