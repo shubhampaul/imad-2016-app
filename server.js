@@ -7,12 +7,13 @@ var bodyParser = require('body-parser');
 var session = require('express-session');
 
 var config = {
-    user: 'uzlpjcqx_db_user_0',
-    database: 'uzlpjcqx_db_0',
-    host: 'localhost',
+    user: 'wgfcdoefmbhrar',
+    database: 'd5dfen0mclg90s',
+    host: 'ec2-54-163-240-7.compute-1.amazonaws.com
+',
     port: '5432',
     password: 'Mf.uvto#+?oU'
-    //password: process.env.DB_PASSWORD
+    password: process.env.DB_PASSWORD
 };
 
 var app = express();
