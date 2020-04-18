@@ -9,7 +9,7 @@ var session = require('express-session');
 var config = {
     user: 'rmkzgjxpdojfak',
     database: 'd3okn20upmn6fe',
-    host: 'ec2-54-163-240-7.compute-1.amazonaws.com',
+    host: 'ec2-18-210-51-239.compute-1.amazonaws.com',
     port: '5432',
     //password: 'Mf.uvto#+?oU'
     password: process.env.DB_PASSWORD
