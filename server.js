@@ -11,8 +11,8 @@ var config = {
     database: 'd3okn20upmn6fe',
     host: 'ec2-18-210-51-239.compute-1.amazonaws.com',
     port: '5432',
-    //password: 'Mf.uvto#+?oU'
-    password: process.env.DB_PASSWORD
+    password: 'b208f6ce300a3273565d2ac68eef343d282c69efbaf0b673ba33d78775e0ad9b'
+    //password: process.env.DB_PASSWORD
 };
 
 var app = express();
