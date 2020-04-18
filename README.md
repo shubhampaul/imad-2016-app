@@ -3,9 +3,6 @@
 Web Application Development - IMAD <br />
 Sep 2016 – Nov 2016 <br />
 
-Sample Implementation - http://paulsite.com <br />
-
-Project description: <br />
 -HTTP web server in NodeJS <br />
 -SSH and Reverse proxies <br />
 -Server Side Javascript <br />
