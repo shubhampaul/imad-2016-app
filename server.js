@@ -7,11 +7,11 @@ var bodyParser = require('body-parser');
 var session = require('express-session');
 
 var config = {
-    user: 'rmkzgjxpdojfak',
-    database: 'd3okn20upmn6fe',
-    host: 'ec2-18-210-51-239.compute-1.amazonaws.com',
+    user: 'xuluoaeyjqdvge',
+    database: 'das1kda65942ca',
+    host: 'ec2-54-75-229-28.eu-west-1.compute.amazonaws.com',
     port: '5432',
-    password: 'b208f6ce300a3273565d2ac68eef343d282c69efbaf0b673ba33d78775e0ad9b'
+    password: '2e7c5fba25b7c7ef02140c5c496e6462cfa25a15c94adff877b976df264b13fc'
     //password: process.env.DB_PASSWORD
 };
 
