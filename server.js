@@ -101,7 +101,7 @@ app.post('/create-user', function (req, res) {
       } else {
           res.send('User successfully created: ' + username);
       }
-     client.release();
+     //client.release();
    });
 });
 
@@ -135,7 +135,7 @@ app.post('/login', function (req, res) {
               }
           }
       }
-     client.release();
+     //client.release();
    });
 });
 
@@ -148,7 +148,7 @@ app.get('/check-login', function (req, res) {
            } else {
               res.send(result.rows[0].username);    
            }
-         client.release();
+         //client.release();
        });
    } else {
        res.status(400).send('You are not logged in');
@@ -160,8 +160,6 @@ app.get('/logout', function (req, res) {
    res.send('<html><body>Logged out!<br/><br/><a href="/">Back to home</a></body></html>');
 });
 
-//var pool = new Pool(config);
-
 app.get('/get-articles', function (req, res) {
    // make a select request
    // return a response with the results
@@ -171,7 +169,7 @@ app.get('/get-articles', function (req, res) {
       } else {
           res.send(JSON.stringify(result.rows));
       }
-     client.release();
+     //client.release();
    });
 });
 
@@ -184,7 +182,7 @@ app.get('/get-comments/:articleName', function (req, res) {
       } else {
           res.send(JSON.stringify(result.rows));
       }
-     client.release();
+    // client.release();
    });
 });
 
@@ -213,7 +211,7 @@ app.post('/submit-comment/:articleName', function (req, res) {
                         });
                 }
             }
-          client.release();
+          //client.release();
        });     
     } else {
         res.status(403).send('Only logged in users can comment');
@@ -233,7 +231,7 @@ app.get('/articles/:articleName', function (req, res) {
             res.send(createTemplate(articleData));
         }
     }
-    client.release();
+    //client.release();
   });
 });
 
