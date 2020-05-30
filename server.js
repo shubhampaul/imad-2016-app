@@ -17,15 +17,6 @@ const client = new Client({
 
 client.connect();
 
-var config = {
-    user: 'hspljyroawdgpt',
-    database: 'ddbpbl38flg97i',
-    host: 'ec2-50-17-90-177.compute-1.amazonaws.com',
-    port: '5432',
-    password: 'de35159b3b46a255c9a2af84139af9bb4f520c17f6dfc140b578f539f99cae67'
-    //password: process.env.DB_PASSWORD
-};
-
 var app = express();
 app.use(morgan('combined'));
 app.use(bodyParser.json());
